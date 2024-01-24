@@ -1,0 +1,171 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  font-size: 62.5%;
+}
+.hide {
+  display: none;
+}
+
+body {
+  font-size: 1.6rem;
+  background: linear-gradient(45deg, #190361 0%, #b0f 100%);
+
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
+
+main {
+  border-radius: 5px;
+  background: #fff;
+  box-shadow: 0px 20px 50px 0px rgba(0, 0, 0, 0.8);
+
+  padding: 4.8rem 6.4rem 6.4rem;
+
+  width: min(42.8rem, 90%);
+  text-align: center;
+}
+
+/********ScreenOne**********/
+h2,
+p {
+  color: #34355b;
+}
+h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.4rem;
+  margin-bottom: 1.4rem;
+  font-weight: 700;
+}
+p {
+  font-family: "DM Sans", sans-serif;
+  font-size: 1.5rem;
+
+  font-weight: 400;
+  margin-bottom: 2.6rem;
+}
+
+/******screenTwo************/
+
+.main {
+  padding: 4.8rem 6.4rem;
+}
+.phrase {
+  background: #e4edf1;
+  box-shadow: 0.2rem 0.2rem 0.2rem 0 rgba(85, 85, 85, 0.5);
+  padding: 1rem;
+}
+.screenTwo p {
+  color: #000;
+
+  text-align: center;
+  font-family: "Dancing Script";
+  font-size: 2.4rem;
+  font-weight: 400;
+
+  margin-top: 2.7rem;
+}
+.screenTwo img {
+  margin-top: 7rem;
+}
+
+button {
+  padding: 1.6rem;
+  border: none;
+  border-radius: 0.4rem;
+  background: #ff9500;
+
+  color: #fff;
+
+  text-align: center;
+  font-family: "DM Sans" sans-serif;
+  font-size: 1.5rem;
+
+  font-weight: 700;
+
+  margin-top: 7.5rem;
+}
+
+button:hover{
+  background: #cf7d09;
+  cursor: pointer;
+}
+
+/*********Animação**********/
+
+.screenOne img:hover {
+  animation: move 0.2s ease-in;
+  animation-iteration-count: infinite;
+  cursor: pointer;
+}
+
+body {
+  background: linear-gradient(45deg, #190361, #bb00ff);
+  animation: gradient 10s ease infinite;
+  background-size: 200% 200%;
+}
+.phrase {
+  animation: appear 2s backwards;
+  
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes move {
+  0% {
+    transform: rotate(5deg);
+  }
+
+  100% {
+    transform: rotate(10deg);
+  }
+}
+@keyframes appear {
+  0% {
+    
+         transform:scale(0.8);    
+           
+    opacity: 0;
+  }
+  50%{
+    
+    transform: translateZ(-100px) translateY(200px);
+  }
+  
+  100% {
+    
+            transform: translateZ(0) translateY(0);
+   
+  }
+}/*
+@keyframes tracking-in-expand-fwd-bottom {
+  0% {
+    letter-spacing: -0.5em;
+    -webkit-transform: translateZ(-700px) translateY(500px);
+            transform: translateZ(-700px) translateY(500px);
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    -webkit-transform: translateZ(0) translateY(0);
+            transform: translateZ(0) translateY(0);
+    opacity: 1;
+  }
+
+}
